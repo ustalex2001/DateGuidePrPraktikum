@@ -1,0 +1,52 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.title{
+    width: 240px;
+    color: #7c7c7c;
+    font-family: monospace;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    animation: flashing-border 0.75s ease infinite, printed-text 5s ease;
+}
+
+@keyframes flashing-border {
+    0%{
+        border-color: orange;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: orange;
+    }
+}
+
+@keyframes printed-text {
+    from{
+        width: 0;
+    }
+}
+
+#backbut{
+    margin-left: 5px;
+}
+
+#forwardbut {
+    margin-left: 10px;
+}
+
+.dgframe{
+    width: 100%;
+    height: calc(93vh - 50px);
+}
+
+.selectform {
+    color: black;
+}
